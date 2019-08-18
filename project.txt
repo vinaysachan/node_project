@@ -1,0 +1,11 @@
+//Mysql ==> package ==> mysql2 (node native connectvity)
+
+Dummy Site Like Flipkart :-
+
+
+1 - Admin Panel
+2 - Front End
+
+Admin Panel -> Catlog (Add / Edit / Delete / Listing Product) (mysql2)
+Front -> Produts Listing (mysql2)
+Admin Panel -> Product Category (Add /edit /delte Product) (ORM(mysql) -> Sequelize)
