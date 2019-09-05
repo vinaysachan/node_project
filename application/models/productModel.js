@@ -3,7 +3,8 @@ const mongoose  = require('mongoose');
 var prodcutSchema = new mongoose.Schema({
     name: String,
     price: Number,
-    photo: String
+    photo: String,
+    imui: String
   }, { collection: 'product' });
 
 var ProductModel = mongoose.model('product', prodcutSchema);
