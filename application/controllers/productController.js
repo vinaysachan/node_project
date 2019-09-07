@@ -39,7 +39,7 @@ var controller = {
   },
 
   addProductView : (req, res, next) => {
-    res.render('front/add_product_page.ejs');
+    res.render('front/add_product_page.ejs', {product: null});
   },
 
   addProductSave : (req, res, next) => {

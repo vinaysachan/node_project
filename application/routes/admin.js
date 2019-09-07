@@ -2,11 +2,18 @@ const express = require('express');
 
 const Router = express.Router();
 
+const adminController = require('../controllers/adminController');
+const authController = require('../controllers/authController');
 
-Router.get('/', (req, res, next) => {
-    // res.send('Admin home page');
-    res.render('admin/dashboard.ejs');
-});
+
+Router.get('/login', authController.loginGet);
+// Router.post('/login', authController.loginPost);
+
+
+Router.get('/', adminController.dashboard);
+
+
+
 
 module.exports =  Router;
 

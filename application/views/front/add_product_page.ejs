@@ -12,8 +12,7 @@
 
 <body>
     <br /><br /><br />
-    
-    <form method="post" action='/<%=(product)?"update-product":"add-product"%>'>
+    <form method="post" action="/<%=(product)?'update-product':'add-product'%>">
         <input type="text" class="form-control" name="id" value="<%=product?product._id:''%>" placeholder="Prodcut name">
         <div class="form-group">
             <label for="name">name</label>

@@ -39,7 +39,6 @@ const prodController = require('../controllers/productController');
 Router.get('/add-product',prodController.addProductView);
 Router.post('/add-product',prodController.addProductSave);
 
-
 Router.get('/products', prodController.getProductsPage);
 Router.get('/product/:id', prodController.getProductPage);
 Router.get('/product-update/:id', prodController.updateProductPage);
