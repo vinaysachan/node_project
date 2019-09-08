@@ -34,6 +34,7 @@ Router.get('/', (req, res, next) => {
 });
 
 const prodController = require('../controllers/productController');
+const chatController = require('../controllers/chatController');
 
 
 Router.get('/add-product',prodController.addProductView);
@@ -44,6 +45,7 @@ Router.get('/product/:id', prodController.getProductPage);
 Router.get('/product-update/:id', prodController.updateProductPage);
 Router.post('/update-product',prodController.updateProduct);
 
+Router.get('/chat',chatController.chatting);
  
 module.exports =  Router;
 

@@ -13,6 +13,10 @@ var adminController = {
         } else {
             req.session.views = 1 ;
         }
+        var session_val = req.session.views ;
+
+        
+          
 
         //login ==> success
         //req.session.user_id = 233;
@@ -26,7 +30,7 @@ var adminController = {
         // }
 
         
-        res.render('admin/dashboard.ejs', {sess : req.session.views});
+        res.render('admin/dashboard.ejs', {sess : session_val});
     }
 }
 
