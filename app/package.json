@@ -1,0 +1,28 @@
+{
+  "name": "node_api",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app.js",
+    "strat-dev": "nodemon app.js",
+    "init" : "nodemon app.js",
+    "prasoon" :"nodemon app.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt": "^3.0.6",
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
+    "dotenv": "^8.1.0",
+    "express": "^4.17.1",
+    "express-rate-limit": "^5.0.0",
+    "express-validator": "^6.2.0",
+    "mongoose": "^5.7.1",
+    "mongoose-paginate-v2": "^1.3.0",
+    "mongoose-sequence": "^5.2.1",
+    "uuid": "^3.3.3"
+  }
+}
