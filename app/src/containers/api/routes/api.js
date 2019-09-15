@@ -1,8 +1,11 @@
 const router                            =   require('express').Router();
+const userController                    =   require('./../controllers/userController');
 
 
-router.get('/api' , (req, res, next) => {
-    res.send('APi Page');
-});
+router.get('/api/users' , userController.getUserList);
+router.get('/api/user/:user_id' , userController.getUserDetail);
 
-module.exports = router ;
+
+
+
+module.exports = router;
