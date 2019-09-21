@@ -11,7 +11,6 @@ module.exports = {
 
     getUserDetail   :   (req, res, next) => {
         res.send('Single User Api Page');
-
         //200
     },
 
